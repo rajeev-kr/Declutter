@@ -1,0 +1,52 @@
+{
+    "manifest_version": 2,
+    "name": "Declutter",
+    "short_name": "Declutter",
+    "version": "1.0.0",
+    "description": "A chrome extension to de-clutter your life.",
+    "icons": {
+        "16": "img/app/icon-16.png",
+        "32": "img/app/icon-32.png",
+        "48": "img/app/icon-48.png",
+        "128": "img/app/icon-128.png"
+    },
+    "background": {
+        "scripts": [
+            "background-scripts/backgroundscript.js"
+        ],
+        "persistent": false
+    },
+    "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'",
+    "chrome_url_overrides": {
+        "newtab": "dashboard.html"
+    },
+    "offline_enabled": true,
+    "browser_action": {
+        "default_title": "declutter",
+        "default_icon": "img/app/icon-16.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_end",
+            "js": [
+                "content-scripts/content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "geolocation",
+        "unlimitedStorage"
+    ],
+    "optional_permissions": [
+        "bookmarks",
+        "topSites",
+        "storage",
+        "chrome://favicon/",
+        "https://cdnjs.cloudflare.com/*"
+    ]
+}

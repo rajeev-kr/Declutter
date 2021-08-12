@@ -1,0 +1,105 @@
+html, body{
+  background-color: black;
+  color: #ffffff;
+  width: max-content;
+  height: max-content;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+.heading{
+    color: white;
+    font-size: 30px;
+    font-family: 'Vidaloka', serif;
+    /* line-height: 20.4vh; */
+    display: flex;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    /* text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue; */
+    align-content: center;
+    text-align: center;
+    /*background: green;*/
+    overflow: hidden;
+}
+
+.list-item{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-family: 'Vidaloka', serif;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  /* text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue; */
+}
+
+.form__field {
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline : 0;
+  font-size: 1.3rem;
+  color : white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field:focus {
+  border: 0;
+  border-bottom: 2px solid rgb(255, 0, 0);
+  outline : 0;
+  font-size: 1.3rem;
+  color : white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.add{
+  background: rgb(35, 35, 36);
+  border: solid 1px #550a0a;
+  border-radius: 10px;
+  font-size: 11px;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: top 2px;
+  color: white;
+  font-size: 30px;
+  font-family: 'Vidaloka', serif;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.remove-list{
+  background: rgb(182, 83, 83);
+  border: solid 1px #ffffff;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 13px;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: top 2px;
+  font-family: 'Vidaloka', serif;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.main-view{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+
+  .add-to{
+    height: max-content;
+    width: 10vh;
+  }
