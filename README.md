@@ -5,7 +5,7 @@ A chrome extension to cut the clutters in your life.
 
 - It helps you to manage your time efficiently by helping you to keep a constant check on time.
 - It has a built-in to-do list that helps you to manage your tasks properly.
-- It keeps you constant motivation by providing motivational quotes in every new tab.
+- It keeps you in constant motivation by providing motivational quotes in every new tab.
 - It's free, easy to use, aesthetic.
 
 
@@ -16,5 +16,5 @@ A chrome extension to cut the clutters in your life.
 ![](./img/todo.png)
 ### Add to To Do List - Use Add Button
 ![](./img/todo_add.png)
-### Remove to To Do List - Use Remove Button
+### Remove to To Do List - Use Declutter Button
 ![](./img/todo_remove.png)
